@@ -17,11 +17,13 @@ brew upgrade zmq
 
 Install the dependencies:
 
-```R
+```coffee
 install.packages(c("rjson", "uuid", "digest"))
 # You'll also need to install the rzmq library from Github for now
 # https://github.com/armstrtw/rzmq
-devtools::install_github("armstrtw/rzmq")
+library(devtools)
+install_github("armstrtw/rzmq")
+install_github("takluyver/IR_kernel")
 ```
 
 And the package itself:
